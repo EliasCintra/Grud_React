@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "name": "Elias",
+      "email": "elias@gmail.com",
+      "age": "23",
+      "id": 1
+    },
+    {
+      "name": "Raquel",
+      "email": "raquel@gmail.com",
+      "age": "22",
+      "id": 2
+    },
+    {
+      "name": "Kleber",
+      "email": "Kleber@kleber.org.br",
+      "age": "38",
+      "id": 5
+    },
+    {
+      "name": "Luis",
+      "email": "aa@luis.gmail",
+      "age": 47,
+      "user": null,
+      "id": 7
+    }
+  ]
+}
