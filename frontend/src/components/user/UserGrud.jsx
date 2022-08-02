@@ -30,9 +30,6 @@ export default class UserCrud extends Component {
 
     save() {
         const user = this.state.user
-
-        user.age = parseInt(user.age);
-        
         const method = user.id ? 'put' : 'post'
         const url = user.id ? `${baseUrl}/${user.id}` : baseUrl
         axios[method](url, user)
@@ -52,8 +49,9 @@ export default class UserCrud extends Component {
         const user = { ...this.state.user }
         user[event.target.name] = event.target.value
         this.setState({ user })
+       
     }
-
+//
     renderForm() {
         return (
             <div className="form">
@@ -63,6 +61,7 @@ export default class UserCrud extends Component {
                             <label>Nome</label>
                             <input type="text" className="form-control"
                                 name="name"
+                                
                                 value={this.state.user.name}
                                 onChange={e => this.updateField(e)}
                                 placeholder="Digite o nome..." />
@@ -74,6 +73,7 @@ export default class UserCrud extends Component {
                             <label>E-mail</label>
                             <input type="email" className="form-control"
                                 name="email" 
+                                
                                 value={this.state.user.email}
                                 onChange={e => this.updateField(e)}
                                 placeholder="Digite o e-mail..." />
@@ -85,13 +85,14 @@ export default class UserCrud extends Component {
                             <label>Idade</label>
                             <input type="text" className="form-control"
                                 name="age"
+                                
                                 value={this.state.user.age}
                                 onChange={e => this.updateField(e)}
                                 placeholder="Digite a idade..." />
                         </div>
                     </div>
                 </div>
-
+                
                 <hr />
                 <div className="row">
                     <div className="col-12 d-flex justify-content-end">
@@ -110,6 +111,7 @@ export default class UserCrud extends Component {
         )
     }
 
+//
     load(user) {
         this.setState({ user })
     }
