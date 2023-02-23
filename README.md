@@ -1,4 +1,4 @@
-# Grup_React
+# Grud_React
 GRUP desenvolvido em React
 
 ## Stack utilizada
