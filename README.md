@@ -1,5 +1,5 @@
 # Grud_React
-GRUP desenvolvido em React
+GRUD desenvolvido em React
 
 ## Stack utilizada
 
